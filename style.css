@@ -1,0 +1,81 @@
+
+ @font-face {
+    font-family: 'Futura-Bold';
+    src: url('./Futura-Bold.ttf') format('truetype');
+    font-weight:normal;
+    font-style:normal;
+} 
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Futura-Bold',sans-serif;
+}
+*::selection{ 
+  color:#fff;
+  background-color: black;
+}
+
+html,body {
+    height:100%;
+    width:100%
+}
+#page1 {
+  min-height:100vh;
+  /* background-color: red; */
+  position:relative;
+  width:100%;
+  padding:0 1vw;
+  padding-top: 18vh;
+}
+#page1 h1 {
+    font-size:16vw ;
+    /* font-family:Futura,sans-serif; */
+    text-transform:uppercase ;
+    line-height: 13vw;
+    letter-spacing: -12px;
+}
+
+#video-container {
+    height:100vh;
+    width:100%;
+    margin-top: 2vw;
+  background-color: grey;
+  position:relative;
+}
+#video-container video{
+  height:100%;
+  width:100%;
+  object-fit: cover;
+}
+#video-container #play {
+  padding :3vw 2.5vw  ;
+  background-color: black;
+  color:#ffff;
+  font-size: 1.3vw;
+  position:fixed;
+ text-transform:uppercase;
+ border-radius: 50%;
+ font-family: Futura-Bold;
+ opacity: 0;
+ scale: 0;
+}  
+#page2 {
+  height:100vh;
+  width:100%;
+  display:flex;
+  position:relative;
+  align-items: center;
+  justify-content: space-between;
+  padding:3vw 1vw;
+}
+#page2 .elem{
+  height: 100%;
+  width: 32%;
+  background-color: red;
+}
+#page2 .elem img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
